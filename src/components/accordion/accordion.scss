@@ -1,0 +1,84 @@
+@use "@/app/scss/variables" as *;
+
+//*-------------> Desktops
+
+#accordion {
+  width: 100%;
+  height: auto;
+  margin: 5px 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px;
+  border-color: $lt-gr-blue;
+  border-bottom-style: solid;
+
+  .accordion-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-style: none;
+    background-color: whitesmoke;
+
+    .accordion-title {
+      text-align: left;
+      font-size: 14px;
+      color: $vr-dr-gr-blue;
+    }
+
+    .down-arrow {
+      transition: 0.3s ease-in-out;
+
+      svg {
+        width: 10px;
+        height: auto;
+      }
+    }
+
+    &:hover {
+      .accordion-title {
+        color: $sf-red;
+      }
+    }
+  }
+
+  .accordion-expanded {
+    .accordion-title {
+      font-weight: 600;
+    }
+
+    .down-arrow {
+      transform: rotate(180deg);
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .accordion-content {
+    width: 90%;
+    border-style: none;
+    font-size: 13px;
+    padding: 0px 5px 15px 5px;
+    color: $dr-gr-blue;
+  }
+}
+
+//*----------> Mobiles
+@media screen and (max-width: 376px) {
+
+  #accordion {
+
+    .accordion-btn {
+
+      .accordion-title {
+        font-size: 13px;
+      }
+    }
+
+    .accordion-content {
+      font-size: 12px;
+    }
+  }
+}

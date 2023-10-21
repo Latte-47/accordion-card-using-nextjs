@@ -1,0 +1,22 @@
+@import url("https://fonts.google.com/specimen/Kumbh+Sans");
+
+//* font families ----->
+  $fontKS: "Kumbh Sans", sans-serif;
+
+//* colors ----->
+  // primary ----->
+    // text -------->
+      $vr-dr-blue: hsl(238, 29%, 16%);
+      $sf-red: hsl(14, 88%, 65%);
+
+    // gradient ------>
+      $sf-violet: hsl(273, 75%, 66%);
+      $sf-blue: hsl(240, 73%, 65%);
+  
+  // neutral ----->
+    // text ----->
+      $vr-dr-gr-blue: hsl(237, 12%, 33%);
+      $dr-gr-blue: hsl(240, 6%, 50%);
+
+    // dividers ----->
+      $lt-gr-blue: hsl(240, 5%, 91%);
